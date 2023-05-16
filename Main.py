@@ -1,5 +1,4 @@
-from math_function import add
-
+from math_function import add, multiply, divide
 
 def main():
 
@@ -9,10 +8,16 @@ def main():
 
     if operator == "+":
         result = add(data_1, data_2)
+    elif operator == "*":
+        result = multiply(data_1, data_2)
+    elif operator == "/":
+        result = divide(data_1, data_2)
+    else:
+        print("Operator tidak valid")
+        return
+ print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
-    print("{} {} {} = {} ".format(data_1, operator, data_2, result))
 
-
-if __name__ == "__main__":
-    print("Hello Main !")
-    main()
+if _name_ == "_main_":
+    print("Hello Main !")
+    main()
